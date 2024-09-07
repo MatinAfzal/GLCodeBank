@@ -16,6 +16,8 @@ class ShaderHandler {
 		ShaderHandler(const char* vertexFile, const char* fragmentFile);
 		void activate(void);
 		void deactive(void);
+	private:
+		void errorHandler(unsigned int shader, const char* type);
 };
 
 #endif
